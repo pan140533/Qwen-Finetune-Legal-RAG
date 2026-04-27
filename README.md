@@ -8,15 +8,25 @@
 ## 项目结构
 .
 ├── 中华人民共和国劳动法_20181229.docx # 原始法律文档
+
 ├── 中华人民共和国民法典_20200528.docx # 原始法律文档
+
 ├── build_text_corpus.py # 将 docx 转换为纯文本语料（law_train.txt）
+
 ├── law_train.txt # 生成的语料（每行一个法律句子/段落）
+
 ├── build_vector_store.py # 将语料切块、嵌入并存入 ChromaDB
+
 ├── chroma_law_db/ # 向量数据库存储目录（运行后自动生成）
+
 ├── train_lora_law.py # LoRA 微调训练脚本
+
 ├── lora_law_finetuned/ # 训练好的 LoRA 权重（运行后生成）
+
 ├── test_lora_inference.py # 测试微调模型效果（非 RAG，仅复述任务）
+
 ├── api_server.py # RAG API 服务（主入口）
+
 └── README.md # 本文件
 
 
