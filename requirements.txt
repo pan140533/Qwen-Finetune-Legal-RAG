@@ -1,0 +1,22 @@
+# 核心深度学习框架
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+peft>=0.6.0
+datasets>=2.14.0
+bitsandbytes>=0.41.0
+
+# 嵌入模型与向量数据库
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+
+# 文档读取
+python-docx>=0.8.11
+
+# API 服务
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# 工具库
+tqdm>=4.65.0
